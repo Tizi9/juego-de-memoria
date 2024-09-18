@@ -1,0 +1,131 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.63);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(48, 37, 37, 0.8);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #3d0319e0, #000000da);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: repeat(2, 130px);
+  gap: 20px;
+  justify-content: center; 
+  align-items: center;
+  width: 400px;
+  height: 270px;
+  margin-bottom: 40px;
+  margin-top: -5px;
+}
+.colour-button {
+  width: 130px;
+  height: 130px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 60px;
+  transition: transform 0.2s ease-in-out;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  opacity: 0.7;
+  border : none;
+}
+
+.colour-button:hover, .colour-button.active {
+  opacity: 1;
+  transform: scale(1.04);
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.7);
+}
+
+.start-button, .reset-button {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  padding: 12px 20px;
+  background-color: #e27686;
+  color: #fff;
+  border-radius: 35px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button:hover, .reset-button:hover {
+  background-color: #c94d5f;
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 30px rgba(255, 107, 129, 0.5);
+  cursor: pointer;
+}
+
+h1 {
+  font-family: Handjet, sans-serif;
+  font-size: 53px;
+  color: #cccbcb;
+  font-weight: normal;
+}
+
+.score {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  background-color: rgba(241, 156, 177, 0.808);
+  color: white;
+  padding: 16px;
+  border-radius: 15px;
+}
+
+.game-over {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 60px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 55px;
+  margin: 15px;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
